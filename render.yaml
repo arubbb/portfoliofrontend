@@ -1,0 +1,7 @@
+staticSite:
+  name: Portfolio
+  static_publish_path: dist
+  redirects:
+    - source: /*
+      destination: /index.html
+      type: rewrite

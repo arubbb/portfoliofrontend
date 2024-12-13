@@ -1,0 +1,34 @@
+/* Base styles for mobile */
+.container {
+  position: relative;
+  flex: 1;
+  padding: 1rem; /* p-4 */
+  scroll-margin: 3rem; /* scroll-my-12 */
+  gap: 2rem; /* gap-8 */
+  /* border: 1px solid white; */
+  margin: 1rem; /* Default margin for mobile */
+}
+
+/* Styles for print */
+@media print {
+  .container {
+    gap: 1.5rem; /* print:gap-6 */
+    padding: 3rem; /* print:p-12 */
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+  .container {
+    top: 2rem; /* md:top-8 */
+    padding: 4rem; /* md:p-16 */
+    margin: 2rem 6rem; /* Margin for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    margin: 2rem 13rem; /* Margin for even larger screens */
+  }
+}
+

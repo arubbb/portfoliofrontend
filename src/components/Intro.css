@@ -1,0 +1,76 @@
+.Introduction p {
+  opacity: 0.5;
+ 
+}
+
+.Introduction p span {
+  transition: opacity 0.2s;
+}
+
+.Introduction p span:hover {
+  opacity: 1;
+}
+
+.icons, .HomeIcon {
+  display: flex;
+  font-size: 1.5em;
+  cursor: pointer;
+  align-items: center;
+}
+
+.icons .icon, .HomeIcon {
+  margin: 0 5px;
+  opacity: 0.7;
+  margin-left: 0;
+  /* height: 1cap ; */
+}
+
+.icon:hover, .HomeIcon:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.imageMain {
+  height: 200px; /* Adjust as needed */
+  width: 200px; /* Adjust as needed */
+  border-radius: 10%; /* Curved image */
+  float: right; /* Position on the right side */
+  opacity: 0.8; /* Make it semi-transparent */
+  animation: shadow-pulse 2s infinite;
+  outline: 5px solid rgba(0, 0, 0, 0.2);
+}
+
+.read {
+  cursor: pointer;
+  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cv-download-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.cv-download-link:hover {
+  opacity: 1;
+}
+
+.cv-download-link .icon {
+  font-size: 1.2em;
+}
+
+.cv-download-link span {
+  font-size: 0.7em;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.cv-download-link:hover span {
+  opacity: 1;
+}

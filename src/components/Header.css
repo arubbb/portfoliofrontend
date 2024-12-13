@@ -1,0 +1,67 @@
+.header {
+    position: sticky;
+    top: 2rem; /* top-4 */
+    z-index: 10; /* z-10 */
+    margin-left: auto;
+    margin-right: auto; /* mx-auto */
+    display: flex; /* flex */
+    flex-direction: row; /* flex-row */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    gap: 0.5rem; /* gap-2 */
+    border-radius: 9999px; /* rounded-full */
+    border: 1px solid rgba(112, 112, 112, 0.1875); /* border-neutral-700/30 */
+    background: rgba(255, 255, 255, 0.1); /* Fully transparent with a glossy look */
+    padding-left: 1rem; /* px-4 */
+    padding-right: 1rem; /* px-4 */
+    padding-top: 0.5rem; /* py-2 */
+    padding-bottom: 0.5rem; /* py-2 */
+    backdrop-filter: blur(12px); /* backdrop-blur-md */
+    box-shadow: 0 10px 32px -12px rgba(50, 38, 98, 0.12), 0 1px 2px rgba(50, 38, 98, 0.06); /* box-shadow */
+    /* font-family: '__GeistSans_ac79ff, __GeistSans_Fallback_ac79ff'; */
+    font-size: 16px;
+    opacity: 0.8;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: normal;
+    width: fit-content;
+   
+}
+
+@media (max-width: 767px) {
+    .header {
+        top: 1rem; /* md:top-8 */
+    }
+}
+
+.header.dark {
+    background: rgba(255, 255, 255, 0.1); /* Slightly darker for dark mode */
+}
+
+.image {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%; /* Curved image */
+}
+
+.links {
+    display: flex;
+    gap: 1rem; /* Adjust gap to space out links */
+    align-items: center;
+}
+
+.link {
+    /* color: #F6F5F5; */
+    text-decoration: none;
+}
+
+.link.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.active-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}

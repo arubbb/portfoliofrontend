@@ -1,0 +1,66 @@
+.card-container {
+    
+    border-radius: 0.5rem; /* equivalent to .rounded-lg */
+    background-color: inherit; /* equivalent to .bg-card, replace #yourColor with the actual color */
+    color: #fafafa; /* equivalent to .text-card-foreground, replace #yourColor with the actual color */
+    display: flex; /* equivalent to .flex */
+
+   padding-top: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden; /* equivalent to .overflow-hidden */
+    /* border: 1px solid black; equivalent to .border, replace #yourColor with the actual color */
+    padding: 0.5rem; /* equivalent to .p-2 */
+    margin-top: 1rem  !important;
+}
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+  }
+  .skill-container {
+    margin-top: 0.5rem; /* equivalent to .mt-2 */
+    display: flex; /* equivalent to .flex */
+    flex-wrap: wrap; /* equivalent to .flex-wrap */
+    gap: 0.25rem; /* equivalent to .gap-1 */
+  }
+  
+  .skill-chip {
+    background-color: #31363F;
+    color: #fafafa;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+  }
+.website-icon-container {
+    margin-top: 0.5rem;
+    background-color: #373A40;
+    padding: 0.25rem 0.5rem;
+    padding-bottom: 0.5rem;
+    /* padding: 0.25rem 0.25rem 0.25rem 0.25rem; */
+    border-radius: 0.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.website-icon {
+    font-size: 0.9rem;
+    color: #ffffff;
+    line-height: 1;
+}
+
+#web{
+   
+    position: relative;
+    top: 0.3rem;
+}
+
+#CardMedia{
+    background-color: #121212;
+
+    border: 0.5px solid #DDDDDD;
+    color:#fafafa
+}

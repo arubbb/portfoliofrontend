@@ -1,0 +1,122 @@
+:root {
+  --card-bg-color: #31363F;
+  --text-color: #FAFAFA;
+  --skill-chip-bg-color: #31363F;
+  --website-icon-bg-color: #373A40;
+  --primary-color: #FF6F61;
+  --text-color: #e6e6e6;
+  --background-color: #121212;
+  --skill-color: #31363F;
+  --accent-color: #333;
+  --hover-color: #fff;
+  --accordion-bg: rgba(34, 34, 34, 0.8);
+  --accordion-border: rgba(255, 111, 97, 0.3);
+  --accordion-header-bg: rgba(51, 51, 51, .8);
+  --accordion-content-bg: rgba(34, 34, 34, 0.6);
+  --prev-back-color: #fff;
+  --letter-color:#333;
+  --l-text-color:#FF6F61;
+  --project-technology-color: #f0f0f0;
+}
+
+.light-theme {
+  --card-bg-color: #F0F0F0;
+  --text-color: #2C2C2C;
+  --skill-chip-bg-color: #E0E0E0;
+  --website-icon-bg-color: #D0D0D0;
+  --project-technology-color: #f0f0f0;
+}
+
+.dark-theme {
+  --card-bg-color: #31363F;
+  --text-color: #FAFAFA;
+  --skill-chip-bg-color: #31363F;
+  --website-icon-bg-color: #373A40;
+  --project-technology-color: #CCCCCC;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Global styles for body */
+body {
+  
+  overflow-x: hidden !important;
+  color: #F1F1F1;
+  background-color: #121212;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* This will make the link color the same as the surrounding text */
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* Prevents grey highlight on tap */
+    
+}
+a:hover{
+  text-decoration: underline;
+  opacity: 1;
+}
+.icons a, .icons a * {
+  display: inline-block;
+  vertical-align: middle;
+  gap:10px;
+}
+/* Base styles for mobile */
+.container {
+  position: relative;
+  flex: 1;
+  padding: 1rem; /* p-4 */
+  scroll-margin: 3rem; /* scroll-my-12 */
+  gap: 2rem; /* gap-8 */
+  /* border: 1px solid white; */
+  margin: 1rem; /* Default margin for mobile */
+}
+.location-container {
+  display: flex; /* Enables flexbox */
+  align-items: center; /* Vertically centers the items */
+  gap: 8px; /* Optional: Adds space between the icon and text */
+}
+/* Styles for print */
+@media print {
+  .container {
+    gap: 1.5rem; /* print:gap-6 */
+    padding: 3rem; /* print:p-12 */
+  }
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+  .container {
+    top: 2rem; /* md:top-8 */
+    padding: 4rem; /* md:p-16 */
+    margin: 2rem 6rem; /* Margin for larger screens */
+  }
+}
+@media (max-width:600px) {
+  .location-container {
+    justify-content: center; /* Centers the items horizontally in the container */
+    font-size:small;
+   
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    margin: 2rem 13rem; /* Margin for even larger screens */
+  }
+}
+
