@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import main from "../images/header1.gif"; 
+import main from "../images/hi.gif"; 
 import { Link, useLocation } from "react-router-dom";
 import { Github, Linkedin, MailPlus, NotepadText, House, Globe } from 'lucide-react';
 import "./Intro.css";
