@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronUp } from 'lucide-react';
-import image from '../images/header1.png';
+import image from '../images/header1.gif';
 import './Header.css';
 
 export default function Header() {

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import main from "../images/mainLogo1.png"; 
+import main from "../images/header1.gif"; 
 import { Link, useLocation } from "react-router-dom";
 import { Github, Linkedin, MailPlus, NotepadText, House, Globe } from 'lucide-react';
 import "./Intro.css";
@@ -19,7 +19,7 @@ export default function Intro() {
         data-aos-easing="ease-in-out"
       >
         <b>
-          Hi, I&apos;m Umama <span id="wave-emoji">👋</span>
+          Hi, I&apos;m Arub <span id="wave-emoji">👋</span>
         </b>
       </h1>
 
@@ -53,28 +53,23 @@ export default function Intro() {
       >
         <div className='intro'>
           <p>
-            I&apos;m a final-year Computer Science student at the University of
-            Huddersfield, UK. I&apos;m passionate about technology and problem-solving.
-            Currently working as an IT Support Analyst at Local Care Direct NHS.
+            I&apos;m a student pursuing BSc Artificial Intelligence & Computer Science 
+            at the University of Huddersfield, UK. I&apos;m passionate about machine learning 
+            and project management. Currently working as a PRINCE2 Private Tutor and Academic Representative.
           </p>
-          <div
-            className="icons"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-            data-aos-duration="1000"
-          >
-            <a href="mailto:umama2003@live.com">
+          <div className="icons">
+            <a href="mailto:a.anwar.arub@gmail.com">
               <MailPlus className="icon" strokeWidth={0.75}/>
             </a>
             <a
-              href="http://linkedin.com/in/umama-aamir-034221213"
+              href="https://linkedin.com/in/arubanwar"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Linkedin strokeWidth={0.75} className="icon"/>
             </a>
           </div>
-        </div>
+      </div>
         {
           location.pathname ==='/' ?(
             <Link className='read' to="/about">

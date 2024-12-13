@@ -48,7 +48,6 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-// ... (keep all imports and styled components the same)
 
 export default function AboutMe() {
   const [expanded, setExpanded] = React.useState("panel1");
@@ -66,18 +65,17 @@ export default function AboutMe() {
       
       <div className="container Exper" data-aos="fade-up">
         <h2>Experience</h2>
-        <a href="https://www.lcdwestyorkshire.nhs.uk/">
-          <span className="Company">Local Care Direct NHS</span>
+        <a href="https://www.hud.ac.uk/">
+          <span className="Company">University of Huddersfield</span>
         </a>
         <div className="container-duration">
-          <span className="Duration">September 2023 - September 2024</span>
+          <span className="Duration">September 2022 - Present</span>
         </div>
         <br />
-        <span className="Role"><b>IT Support Analyst</b></span>
+        <span className="Role"><b>Academic Representative</b></span>
         <p>
-          Skilled IT Support professional with experience in healthcare technology support,
-          system management, and user training. Proven track record in troubleshooting,
-          device deployment, and maintaining security protocols in a healthcare setting.
+          Serving as a vital bridge between students and faculty, facilitating communication
+          and implementing innovative feedback collection methods to improve course delivery.
         </p>
         
         <div className="accordion-container">
@@ -91,43 +89,27 @@ export default function AboutMe() {
             </AccordionSummary>
             <AccordionDetails>
               <ul>
-                <li>Provided front-line technical support for healthcare professionals</li>
-                <li>Managed ticketing system for user requests</li>
-                <li>Set up laptops using Intune for efficient deployment</li>
-                <li>Managed smart card renewals for security compliance</li>
-                <li>Implemented cybersecurity measures</li>
-                <li>Delivered staff training on IT best practices</li>
+                <li>Facilitated communication between students and faculty</li>
+                <li>Implemented innovative feedback collection methods</li>
+                <li>Translated student feedback into actionable recommendations</li>
+                <li>Monitored effectiveness of implemented changes</li>
               </ul>
             </AccordionDetails>
           </Accordion>
         </div>
 
-        <a href="https://www.lcdwestyorkshire.nhs.uk/">
-          <span className="Company">Local Care Direct</span>
-        </a>
+        <span className="Company">PRINCE2 Private Tutor</span>
         <div className="container-duration">
-          <span className="Duration">October 2024 - Present</span>
+          <span className="Duration">January 2024 - Present</span>
         </div>
         <br />
-        <span className="Role"><b>Receptionist</b></span>
+        <span className="Role"><b>Self-employed</b></span>
         <p>
-          First point of contact for patients and visitors, managing appointments and
-          administrative tasks while maintaining healthcare compliance standards.
-        </p>
-
-        <a href="https://www.coop.co.uk/">
-          <span className="Company">Co-op</span>
-        </a>
-        <div className="container-duration">
-          <span className="Duration">2021 - 2023</span>
-        </div>
-        <br />
-        <span className="Role"><b>Customer Team Member</b></span>
-        <p>
-          Provided excellent customer service while handling various responsibilities
-          including product assistance and dispute resolution.
+          Delivering expert PRINCE2 methodology tutoring and creating tailored study plans
+          for individual students.
         </p>
       </div>
+
 
       <div className="container Education" data-aos="fade-up">
         <h2>Education</h2>
@@ -135,13 +117,10 @@ export default function AboutMe() {
           <span className="University">University of Huddersfield, UK</span>
         </a>
         <br />
-        <a href="https://courses.hud.ac.uk/full-time/undergraduate/computer-science-bsc-hons">
-          <span className="Degree">BSc (Hons) Computer Science</span>
-        </a>
+        <span className="Degree">BSc Artificial Intelligence & Computer Science</span>
         <div className="container-duration">
-          <span className="Duration">September 2021 - Present</span>
+          <span className="Duration">2022 - Present</span>
         </div>
-        <p>Predicted: 1st Class Honours</p>
 
         <div className="accordion-container">
           <Accordion
@@ -154,50 +133,25 @@ export default function AboutMe() {
             </AccordionSummary>
             <AccordionDetails>
               <ul>
-                <li>Artificial Intelligence</li>
-                <li>Algorithms & Data Structures</li>
-                <li>Relational Databases & Web Integration</li>
-                <li>Software Design & Development</li>
-                <li>Object-Oriented Systems Development</li>
+                <li>Algorithms and Data Structures</li>
+                <li>Machine Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Data Science</li>
+                <li>Advanced Web Programming</li>
               </ul>
-            </AccordionDetails>
-          </Accordion>
-
-          <Accordion
-            className="acc"
-            expanded={expanded === "education2"}
-            onChange={handleChange("education2")}
-          >
-            <AccordionSummary aria-controls="education2-content" id="education2-header">
-              <strong>Previous Education</strong>
-            </AccordionSummary>
-            <AccordionDetails>
-              <div>
-                <h4>A-Levels - New College, Bradford (2019-2021)</h4>
-                <ul>
-                  <li>Computer Science - A</li>
-                  <li>Psychology - A</li>
-                  <li>BTEC Applied Science - Distinction*</li>
-                </ul>
-                
-                <h4>GCSEs - Bradford Girls' Grammar School (2015-2019)</h4>
-                <ul>
-                  <li>8 GCSEs including:</li>
-                  <li>Mathematics (6)</li>
-                  <li>English Language (6)</li>
-                  <li>Computer Science (6)</li>
-                </ul>
-              </div>
             </AccordionDetails>
           </Accordion>
         </div>
       </div>
+
+      
+
       <div className="container Interests" data-aos="fade-up">
-        <h2>Extracurricular Activities</h2>
+        <h2>Extra-Curricular Activities</h2>
         <ul>
-          <li>Tech Repair Enthusiast</li>
-          <li>Football</li>
-          <li>Group Project Collaborator</li>
+          <li>Calligraphy</li>
+          <li>Poetry</li>
+          <li>Global Tongue Society Committee Member</li>
         </ul>
       </div>
     </>
